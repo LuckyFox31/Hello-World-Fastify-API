@@ -15,3 +15,7 @@ async function welcomeHomeController(request, reply){
 		errorHandler(reply, 500, error);
 	}
 }
+
+module.exports = {
+	welcomeHomeController
+}
