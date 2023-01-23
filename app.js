@@ -4,6 +4,8 @@ const fastify = require('fastify');
 
 const app = fastify();
 
+app.register(require('./src/routes/HomeRoutes'), {prefix: '/'});
+
 function start(){
 	try {
 		app.listen({port: process.env.SERVER_PORT})
