@@ -1,6 +1,6 @@
 {
   "name": "hello_world_fastify_api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small Node.js Fastify API.",
   "main": "app.js",
   "scripts": {
