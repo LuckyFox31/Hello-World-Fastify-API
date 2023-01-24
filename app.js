@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const fastify = require('fastify');
 
-const app = fastify({logger: true});
+const app = fastify();
 
 app.register(require('./src/routes/HomeRoutes'), {prefix: '/'});
 
