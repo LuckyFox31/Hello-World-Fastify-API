@@ -40,5 +40,11 @@ docker build -t hello-world-fastify-api:latest -f Dockerfile .
 Run container with image :
 
 ```shell
-docker run -it -p 3000:3000 -e SERVER_PORT=3000 hello-world-fastify-api:latest
+docker run -it -p 3000:3000 hello-world-fastify-api:latest
+```
+
+You can update environment variables in [`Dockerfile`](Dockerfile):
+```Dockerfile
+ENV SERVER_PORT=3000
+ENV SERVER_HOST="0.0.0.0"
 ```
